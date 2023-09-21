@@ -1,0 +1,84 @@
+<!-- 
+What is CSS?
+> CSS stands for Cascading Style Sheets, used for styling/Designing HTML elements.
+> CSS is a language that describes the style of an HTML document.
+> 3 ways to insert CSS:
+    1. Inline CSS
+    2. Internal CSS
+    3. External CSS
+
+> 1. Inline CSS: (element level)
+    > Inline CSS is used to style a single element.
+    > Inline CSS is written inside the HTML element, using the style attribute.
+    > Syntax: <h1 style="color:blue;">This is a Blue Heading</h1>
+
+> 2. Internal CSS: (document level)
+    > Internal CSS is used to style a single page.
+    > Internal CSS is written inside the <style> element, inside the <head> section of an HTML page.
+    > Syntax: <head>
+                <style>
+                    body {background-color: powderblue;}
+                    h1   {color: blue;}
+                    p    {color: red;}
+                </style>
+              </head>
+
+> 3. External CSS: (Multi document level)
+    > External CSS is used to style multiple pages.
+    > External CSS is written in a separate file with .css extension.
+    > External CSS is linked to HTML using <link> tag.
+    > Syntax: <head>
+                <link rel="stylesheet" href="style.css">
+              </head>
+
+> If we want to use all the 3 types of CSS, then the priority is given to the Inline CSS, then Internal CSS and then External CSS.
+
+> CSS Selectors: (used to select the HTML elements that we want to style)
+    1. Element Selector
+    2. #id Selector
+    3. .class Selector
+    4. Attribute Selector
+    5. Descendant Selector
+    6. Child Selector
+    7. Adjascent and General Sibling Selector
+    8. Pseudo Classes
+    9. Pseudo Elements
+    10. nth-of-type and nth-child Selector
+    11. The Universal Selector (*)
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <style>
+        /* Element Selector */
+        h1, p {
+            text-align: center;
+            color: red;
+        }
+
+        /* ID Selector */
+        #p6 {
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: orangered;">Introduction to CSS</h1>
+    <p style="color: orange;">This is a Paragraph.</p>
+    <p>This is a Paragraph no 1</p>
+    <p>This is a Paragraph no 2</p>
+    <p>This is a Paragraph no 3</p>
+    <p>This is a Paragraph no 4</p>
+    <p>This is a Paragraph no 5</p>
+
+    <p id="p6">This is a Paragraph no 6</p>
+</body>
+</html>
