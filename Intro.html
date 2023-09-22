@@ -59,19 +59,52 @@ What is CSS?
     <title>Introduction to CSS</title>
     <style>
         /* Element Selector */
-        h1, p {
+        /* h1, p {
             text-align: center;
             color: red;
-        }
+        } */
 
         /* ID Selector */
-        #p6 {
+        /* #p6 {
             color: magenta;
+        } */
+
+        /* class Selector */
+        /* .big-button {
+            font-size: 60px;
+            color: blue;
+        } */
+
+        /* Attribute Selector */
+        /* h2[class="magic"] {
+            color: green;
+        } */
+
+        /* input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        } */
+
+        /* Descendent Selector */
+        /* div h2 {
+            color: purple;
+        } */
+
+        /* Child Selector */
+        /* div > p {
+            color: limegreen;
+        } */
+
+        /* Adjacent and general siblings selectors */
+        div ~ p {
+            color: gold;
         }
+
+
     </style>
 </head>
 <body>
-    <h1 style="color: orangered;">Introduction to CSS</h1>
+    <!-- <h1 style="color: orangered;">Introduction to CSS</h1>
     <p style="color: orange;">This is a Paragraph.</p>
     <p>This is a Paragraph no 1</p>
     <p>This is a Paragraph no 2</p>
@@ -80,5 +113,29 @@ What is CSS?
     <p>This is a Paragraph no 5</p>
 
     <p id="p6">This is a Paragraph no 6</p>
+
+    <button class="big-button">Click Me</button>
+
+    <h2 id="title" class="magic" rel="friend">Dev Desai</h2>
+    <input type="checkbox">Input 1<br>
+
+    <div>
+        <h2>This is h2 tag inside of a div</h2>
+    </div>
+
+    <div>
+        <p>This is a paragraph tag inside of a div tag</p>
+    </div> -->
+
+    <div>
+        <p>para 1</p>
+        <p>Para 2</p>
+        <section><p>Para 3</p></section>
+    </div>
+    
+    <p>para 4</p>
+    <p>para 5</p>
+
+
 </body>
 </html>
