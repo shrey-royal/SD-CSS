@@ -1,0 +1,19 @@
+/* background-color */
+/* * {
+    background-color: black;
+    color: whitesmoke;
+} */
+
+/* background-image */
+/* * {
+    background-image: url("/assets/images/kitty.png");
+    background-position: center;   /* top, bottom, left, right, center * /
+    background-repeat: no-repeat;  /* repeat, no-repeat, repeat-x, repeat-y * /
+    background-attachment: fixed;  /* scroll, fixed * /
+} */
+
+*{
+    background-size: 200px;
+    background-image: url("/assets/images/kitty.png");
+    background-repeat: round repeat;
+}
