@@ -1,0 +1,50 @@
+/* 
+border-top-left-radius: It is used to set the border-radius for the top-left corner
+border-top-right-radius: It is used to set the border-radius for the top-right corner
+border-bottom-right-radius:	It is used to set the border-radius for the bottom-right corner
+border-bottom-left-radius: It is used to set the border-radius for the bottom-left corner
+
+border-radius: It is used to set the border-radius for all the four corners
+(starts from top-left corner and goes clockwise)
+
+*/
+/* border radius */
+.br {
+    width: 100px;
+    height: 100px;
+    background-color: #f2f2f2;
+    border: 2px solid #4CAF50;
+    /* border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%; */
+    border-radius: 100% 0%;
+}
+
+/* border-collapse */
+
+table {
+    border: 2px darkorchid double;
+}
+
+table:hover {
+    border-color: powderblue;
+}
+
+th {
+    border: 1px dashed darkmagenta;
+}
+
+th:hover {
+    border-color: darkslateblue;
+}
+
+td {
+    border: 1px solid pink;
+}
+
+td:hover {
+    border-color: deeppink;
+}
+
+/* #t1 {
+    border-collapse: collapse;
+} */
