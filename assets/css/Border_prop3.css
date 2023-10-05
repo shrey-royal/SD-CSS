@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    color: white;
+
+}
+
+.box1 {
+    border-block: 5px solid salmon;
+    writing-mode: horizontal-tb;
+}
+
+.box2 {
+    border-block: 5px solid pink;
+    writing-mode: vertical-lr;
+}
+
+.box3 {
+    border: 30px solid pink;
+    height: 100px;
+    width: 400px;
+    border-image: url(../images/border.png) 25 round;
+}
+
+.box4 {
+    border: 10px solid white;
+    border-image: url(../images/gradient.svg) 10% stretch;
+    width: 40vw;
+    height: 40vh;
+    margin: 4em auto;
+}
+
+.box5 {
+    border: 20px solid pink;
+    border-image: url(../images/hearts.png) 20 22 round;
+    height: 100px;
+    width: 400px;
+}
