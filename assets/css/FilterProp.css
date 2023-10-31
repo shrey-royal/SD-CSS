@@ -1,0 +1,18 @@
+img {
+    /* filter: blur(4px); */
+    /* filter: brightness(1); */
+    /* filter: contrast(1); */
+    /* filter: drop-shadow(16px 16px 50px blue); */   /* x y blur color */
+    /* filter: grayscale(0.7); */
+    /* filter: hue-rotate(90deg); */
+    /* filter: invert(0.7); */
+    /* filter: opacity(0.5); */
+    /* filter: saturate(0.7); */
+    /* filter: sepia(0.7); */
+    filter: url(#svg-DropShadow);
+}
+
+/* .one {
+    width: 500px;
+    box-shadow: 16px 16px 50px blue;
+} */

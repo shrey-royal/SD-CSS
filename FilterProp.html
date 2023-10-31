@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Prop</title>
+    <link rel="stylesheet" href="assets/css/FilterProp.css">
+</head>
+<body>
+    <!-- <img src="assets/images/filter01.jpg"> -->
+
+    <img src="assets/images/kitty-idea.png">
+
+    <svg xmlns="http://www.w3.org/2000/svg" id="svg-filter">
+        <filter id="svg-blur">
+            <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+        </filter>
+        <filter id="svg-DropShadow">
+            <feDropShadow dx="16" dy="16" stdDeviation="2" flood-color="yellow" flood-opacity="0.4" />
+        </filter>
+    </svg>
+
+</body>
+</html>
+
+<!-- 
+There are a number of functions to use for the value:
+
+blur()
+brightness()
+contrast()
+drop-shadow()
+grayscale()
+hue-rotate()
+invert()
+opacity()
+saturate()
+sepia()
+url() – for applying SVG filters
+-->
