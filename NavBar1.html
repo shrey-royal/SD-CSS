@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar1</title>
+    <style>
+       ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0px;
+        overflow: hidden;
+        background-color: lightcyan;
+        position: sticky;
+        top: 0;
+        width: 100%;
+       }
+
+       li {
+        float: left;
+        border-right: 1px solid blue;
+       }
+
+       li a {
+        display: block;
+        color: blue;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+       }
+
+       .active {
+        background-color: gray;
+        color: white;
+       }
+
+       li a:hover {
+        background-color: orange;
+        color: white;
+       }
+
+       .a {
+        top: 200px;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Sticky</h1>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#one">Java</a></li>
+        <li><a href="#two">HTML</a></li>
+        <li><a href="#three">CSS</a></li>
+    </ul>
+
+    <h1 style="padding-top: 100px; text-align: center; padding-bottom: 2000px; background-color: lightsteelblue;">Horizontal NavBar</h1>
+    <div class="a" id="one" style="padding-bottom: 1000px;background-color: lightcoral;">One</div>
+    <div class="a" id="two" style="padding-bottom: 1000px; background-color: lightsalmon;">Two</div>
+    <div class="a" id="three" style="padding-bottom: 1000px; background-color: lightseagreen;">Three</div>
+</body>
+</html>
