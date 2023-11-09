@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe Animation</title>
+    <style>
+        /* creating animation */
+        @keyframes colorchanger {
+            0% {
+                background-color: black;
+                color: white;
+            }
+
+            25% {
+                background-color: white;
+                color: black;
+            }
+
+            50% {
+                background-color: black;
+                color: white;
+            }
+
+            75% {
+                background-color: white;
+                color: black;
+            }
+
+            100% {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        @keyframes blinker {
+            0% { opacity: 0;background-color: lightcoral; }
+            20% { opacity: 1; }
+            80% { opacity: 0; }
+            100% { opacity: 1;background-color: white; }
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        /* applying animation */
+        .animate {
+            margin: 0;
+            padding: 0;
+            /* animation-name: blinker;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out; */
+            animation: blinker 5s infinite 1s;
+        }
+
+        /*animation-name: bounce;*/
+        /*animation-duration: 4s;*/ /* or: Xms */
+        /*animation-iteration-count: 10;*/
+        /*animation-direction: alternate;*/ /* or: normal */
+        /*animation-timing-function: ease-out; *//* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+        /*animation-fill-mode: forwards;*/ /* or: backwards, both, none */
+        /*animation-delay: 2s; *//* or: Xms */
+    </style>
+</head>
+<body>
+    <!-- <div class="animate"></div> -->
+    <center>
+        <marquee class="animate" behavior="infinite" direction="left" scrollamount="10"><h1>Lorem ipsum dolor sit amet.</h1></marquee>
+    </center>
+</body>
+</html>
