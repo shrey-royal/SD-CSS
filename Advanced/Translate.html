@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            transition: width 2s, background-color 2s;
+        }
+
+        div:hover {
+            background-color: lightcoral;
+            width: 300px;
+        }
+
+        input[type="text"] {
+            width: 100px;
+            transition: width .35s ease-in-out;
+        }
+
+        input[type="text"]:focus {
+            width: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <br><br><br><br><br>
+    Search: <input type="text" name="search">
+</body>
+</html>
