@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2DAnimation</title>
+    <style>
+
+        @keyframes move {
+            0% {
+                transform: rotate(0deg);
+                background-color: red;
+            }
+            5% {
+                transform: rotate(18deg);
+                background-color: #f26101;
+            }
+            10% {
+                transform: rotate(36deg);
+                background-color: #eb9b34;
+            }
+            15% {
+                transform: rotate(54deg);
+                background-color: #e6c268;
+            }
+            20% {
+                transform: rotate(72deg);
+                background-color: #d8eb34;
+            }
+            25% {
+                transform: rotate(90deg);
+                background-color: #a6eb34;
+            }
+            30% {
+                transform: rotate(108deg);
+                background-color: #7aeb34;
+            }
+            35% {
+                transform: rotate(126deg);
+                background-color: #34eb46;
+            }
+            40% {
+                transform: rotate(144deg);
+                background-color: #34e5eb;
+            }
+            45% {
+                transform: rotate(162deg);
+                background-color: #34aeeb;
+            }
+            50% {
+                transform: rotate(180deg);
+                background-color: #3480eb;
+            }
+            55% {
+                transform: rotate(198deg);
+                background-color: #3a34eb;
+            }
+            60% {
+                transform: rotate(216deg);
+                background-color: #6434eb;
+            }
+            65% {
+                transform: rotate(234deg);
+                background-color: #8c34eb;
+            }
+            70% {
+                transform: rotate(252deg);
+                background-color: #b634eb;
+            }
+            75% {
+                transform: rotate(270deg);
+                background-color: #cf34eb;
+            }
+            80% {
+                transform: rotate(288deg);
+                background-color: #eb34d4;
+            }
+            85% {
+                transform: rotate(306deg);
+                background-color: #eb34a9;
+            }
+            90% {
+                transform: rotate(324deg);
+                background-color: #eb34b4;
+            }
+            95% {
+                transform: rotate(342deg);
+                background-color: #eb348c;
+            }
+            100% {
+                transform: rotate(360deg);
+                background-color: #eb3467;
+            }
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 200px;
+            background-color: red;
+            animation: move 3s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

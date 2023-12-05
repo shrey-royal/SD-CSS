@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DAnimation</title>
+    <style>
+        @keyframes move {
+            0% {
+                transform: translateX(0) rotate(-20deg) skewX(-20deg);
+            }
+
+            50% {
+                transform: translateX(500px) rotate(20deg) skewX(20deg);
+            }
+
+            100% {
+                transform: translateX(0) rotate(-20deg) skewX(-20deg);
+            }
+        }
+
+        .container {
+            width: 700px;
+            height: 250px;
+            margin: 300px;
+            border: 1px solid black;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10%;
+            background-color: blue;
+            animation: move 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
