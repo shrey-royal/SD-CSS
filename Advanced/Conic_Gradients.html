@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic Gradient</title>'
+    <style>
+        body {
+            height: 100vh;
+
+            /* background-image: conic-gradient(#A100FFFF, #119CFDFF); */
+            background-image: conic-gradient(from 64deg at 20% 80%, #A100FFFF 0% 25%, #000000 25% 30%, #119CFDFF 30% 50%);
+        }
+
+        #grad {
+            /* height: 400px;
+            width: 400px; */
+            /* background-image: repeating-conic-gradient(red 10%, yellow 20%); */
+            background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="grad"></div>
+</body>
+</html>
+
+<!-- 
+Conic Gradients (rotated around a center point)
+background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+-->
