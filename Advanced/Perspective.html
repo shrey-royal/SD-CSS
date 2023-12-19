@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspective</title>
+    <style>
+        body {
+            background-color: #E7E9EB;
+        }
+
+        #myDiv {
+            height: 300px;
+            background-color: whitesmoke;
+        }
+
+        #div1 {
+            position: relative;
+            margin: auto;
+            height: 150px;
+            width: 250px;
+            padding: 10px;
+            border: 1px solid black;
+            perspective: 200px;
+        }
+
+        #div2 {
+            padding: 50px;
+            position: absolute;
+            border: 1px solid black;
+            background-color: red;
+            transform: rotateX(45deg);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="myDiv">
+        <div id="div1">
+            Div1
+            <div id="div2">
+                Think that you are looking at a wall of a building. See what happens with the perspective when you gradually move closer to the building.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

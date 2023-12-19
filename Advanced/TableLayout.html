@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        body {
+            padding: 14px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px auto;
+            table-layout: auto;
+        }
+
+        table, td, th {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 10px;
+            border: solid 1px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Using the <code>table-layout</code> property</h2>
+
+    <table>
+    <thead>
+        <tr>
+        <th>Example text</th>
+        <th>Example text</th>
+        <th>Example text</th>
+        <th>Example text</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>A much longer piece of content for demo purposes. More goes here.</td>
+        <td>Example text</td>
+        <td>Example text</td>
+        <td>Example text</td>
+        </tr>
+        <tr>
+        <td>Example text</td>
+        <td>Example text</td>
+        <td>Example text</td>
+        <td>Example text</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+        <td>Example text</td>
+        <td>Example text</td>
+        <td>Example text</td>
+        <td>Example text</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>
