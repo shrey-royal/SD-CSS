@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient1</title>
+    <style>
+        :root {
+            --n: 5;
+            --t: transparent;
+        }
+
+        section {
+            height: 100%;
+            position: absolute;
+            width: calc(100% / var(--n));
+
+            &:nth-of-type(1) {
+                left: 0%;
+            }
+
+            &:nth-of-type(2) {
+                left: 20%;
+            }
+
+            &:nth-of-type(3) {
+                left: 40%;
+            }
+
+            &:nth-of-type(4) {
+                left: 60%;
+            }
+
+            &:nth-of-type(5) {
+                left: 80%;
+            }
+        }
+
+        .bg-1 {
+            background: linear-gradient(135deg, #85C9C8, #D4FEE6, #E5FDC9);
+        }
+
+        .bg-2 {
+            background: linear-gradient(to bottom, #C1EBE1, #93B4AC);
+        }
+
+        .bg-3 {
+            background: -webkit-radial-gradient(top left, ellipse, #FDE152 0%, var(--t)), linear-gradient(to bottom, #FA715F, #FA715F 60%, #DB1174, #9B4CA7);
+        }
+
+        .bg-4 {
+            background: linear-gradient(5deg, #556270, #C44D58);
+        }
+
+        .bg-5 {
+            background: linear-gradient(5deg, #036564, #033649);
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="bg-1"></section>
+    <section class="bg-2"></section>
+    <section class="bg-3"></section>
+    <section class="bg-4"></section>
+    <section class="bg-5"></section>
+</body>
+</html>
