@@ -1,0 +1,51 @@
+* {
+    background-color: transparent;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    position: fixed;
+    width: 100vw;
+}
+
+.nav-logo {
+    background-image: url(img/logo/logo-white.png);
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 2vw;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-options {
+    margin-right: 2vw;
+}
+
+.loader {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/bg/bg_page_info.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
