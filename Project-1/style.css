@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,400;500;600;700&display=swap');
+
 * {
     background-color: transparent;
     color: white;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 nav {
@@ -10,7 +14,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     position: fixed;
     width: 100vw;
 }
@@ -30,6 +34,23 @@ ul {
     gap: 2rem;
 }
 
+li {
+    text-decoration: none;
+}
+
+li:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    animation: fadeIn 1.5s alternate;
+}
+
+@keyframes fadeIn {
+    0% {
+        text-underline-offset: 2px;
+    }
+}
+
 a {
     text-decoration: none;
 }
@@ -38,14 +59,26 @@ a {
     margin-right: 2vw;
 }
 
-.loader {
+.header {
     height: 80vh;
     width: 100vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
     background-image: url(img/bg/bg_page_info.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+}
+
+.header > .header-text {
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+.header > .header-text > h1 {
+    font-size: 5rem;
+}
+
+.header > .header-text > p {
+    margin-top: 2%;
+    font-size: medium;
 }
